@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Наш ресторан</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" id="home">
+  <nav class="nav">
+    <a class="logo" href="#home" aria-label="Logo">◇◇</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" data-i18n="nav_home">Главная</a>
+      <a href="#menu" data-i18n="nav_menu">Меню</a>
+      <a href="#about" data-i18n="nav_about">О нас</a>
+      <a href="#book" data-i18n="nav_book">Бронь</a>
+      <div class="lang" id="lang">
+        <button data-lang="ru">RU</button>
+        <button data-lang="kz">KZ</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="phone">
+      <b>📞 +999-888-76-54</b>
+      <small data-i18n="call">Свяжитесь с нами для бронирования</small>
+    </div>
+    <a href="#book" class="btn" data-i18n="book_btn">ЗАКАЗ СТОЛИКА</a>
+  </nav>
+
+  <div class="hero-body">
+    <div class="hero-text">
+      <p class="h-small" data-i18n="hero1">Добро пожаловать в</p>
+      <h1 data-i18n="hero2">Наш ресторан</h1>
+      <p class="tagline" data-i18n="hero3">ДОМ ЛУЧШЕЙ ЕДЫ</p>
+      <a href="#menu" class="btn" data-i18n="view_menu">ПОСМОТРЕТЬ МЕНЮ</a>
+    </div>
+    <img class="hero-plate" src="images/hero-plate.png" alt="">
+  </div>
+</header>
+
+<section class="features">
+  <article class="card">
+    <div class="ico">🍽️</div>
+    <h3 data-i18n="f1t">Магическая <span>Атмосфера</span></h3>
+    <p data-i18n="f1p">В нашем заведении царит магическая атмосфера, наполненная вкусными ароматами</p>
+  </article>
+  <article class="card">
+    <div class="ico">🍽️</div>
+    <h3 data-i18n="f2t">Лучшее качество <span>Еды</span></h3>
+    <p data-i18n="f2p">Качество нашей еды — отменное!</p>
+  </article>
+  <article class="card">
+    <div class="ico">🍽️</div>
+    <h3 data-i18n="f3t">Недорогая <span>Еда</span></h3>
+    <p data-i18n="f3p">Стоимость еды зависит только от её количества. Качество всегда на высоте!</p>
+  </article>
+</section>
+
+<section class="about" id="about">
+  <div class="about-text">
+    <h2 data-i18n="hist_t">Наша <span>История</span></h2>
+    <p data-i18n="hist_p">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населённого пункта. Вдали от цивилизации и связи им пришлось на время обустроить себе нехитрый быт, добывать и готовить себе еду.</p>
+    <div class="stats">
+      <div><b data-count="93">0</b><span data-i18n="st1">Напитки</span></div>
+      <div><b data-count="206">0</b><span data-i18n="st2">Еда</span></div>
+      <div><b data-count="71">0</b><span data-i18n="st3">Закуски</span></div>
+    </div>
+  </div>
+  <div class="collage">
+    <div class="c1"><img src="images/collage1.png" alt=""></div>
+    <div class="c2"><img src="images/collage2.png" alt=""></div>
+    <div class="c3"><img src="images/collage3.png" alt=""></div>
+  </div>
+</section>
+
+<section class="promo">
+  <div>
+    <h2 data-i18n="promo1">Отпразднуйте в одном из самых лучших ресторанов.</h2>
+    <p data-i18n="promo2">Только в этом месяце бизнес-ланч от 250 ₽</p>
+  </div>
+  <a href="#book" class="btn" data-i18n="book_btn">ЗАКАЗ СТОЛИКА</a>
+</section>
+
+<section class="dishes">
+  <h2 class="title" data-i18n="dishes_t">Наши <span>Блюда</span></h2>
+  <div class="dishes-grid">
+    <div class="big-pizza"><img src="images/pizza.png" alt=""></div>
+    <ul class="dish-list">
+      <li><div class="thumb"><img src="images/burger-mini.png" alt=""></div><span data-i18n="mini">Гамбургер мини</span><i></i><em>220 ₽</em></li>
+      <li><div class="thumb"><img src="images/burger-mini.png" alt=""></div><span data-i18n="mini">Гамбургер мини</span><i></i><em>220 ₽</em></li>
+      <li><div class="thumb"><img src="images/burger-mini.png" alt=""></div><span data-i18n="mini">Гамбургер мини</span><i></i><em>220 ₽</em></li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <h2 data-i18n="menu_t">Наше меню</h2>
+  <div class="menu-cards">
+    <article class="mcard"><span class="tag" data-i18n="rec">РЕКОМЕНДУЕМ</span>
+      <div class="round"><img src="images/burger-maxi.png" alt=""><b>420</b></div>
+      <h3 data-i18n="maxi">Гамбургер макси</h3><p data-i18n="maxi_p">Максимально толстый слой мяса</p>
+      <a href="#book" class="btn" data-i18n="order">ЗАКАЗАТЬ</a></article>
+    <article class="mcard">
+      <div class="round"><img src="images/burger-maxi.png" alt=""><b>420</b></div>
+      <h3 data-i18n="maxi">Гамбургер макси</h3><p data-i18n="maxi_p">Максимально толстый слой мяса</p>
+      <a href="#book" class="btn" data-i18n="order">ЗАКАЗАТЬ</a></article>
+    <article class="mcard">
+      <div class="round"><img src="images/burger-maxi.png" alt=""><b>420</b></div>
+      <h3 data-i18n="maxi">Гамбургер макси</h3><p data-i18n="maxi_p">Максимально толстый слой мяса</p>
+      <a href="#book" class="btn" data-i18n="order">ЗАКАЗАТЬ</a></article>
+  </div>
+</section>
+
+<section class="review">
+  <p data-i18n="rev">Я надолго запомню мой День рождения, проведённый в этом ресторане! Отдельное спасибо за комплимент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам.</p>
+  <div class="avatar">🧔</div>
+  <b data-i18n="visitor">Посетитель</b>
+  <span data-i18n="nikolay">Николай</span>
+</section>
+
+<section class="gallery">
+  <h2 class="title" data-i18n="gal_t">Галерея <span>Блюд</span></h2>
+  <div class="gal-grid">
+    <div class="g g1"><img src="images/gal1.png" alt=""></div><div class="g g2"><img src="images/gal2.png" alt=""></div><div class="g g3"><img src="images/gal3.png" alt=""></div>
+    <div class="g g4"><img src="images/gal4.png" alt=""></div><div class="g g5"><img src="images/gal5.png" alt=""></div><div class="g g6"><img src="images/gal6.png" alt=""></div>
+  </div>
+
+  <h2 class="title" data-i18n="chef_t">Наши <span>Повара</span></h2>
+  <div class="chefs">
+    <div class="chef"><img src="images/chef1.png" alt=""></div><div class="chef"><img src="images/chef2.png" alt=""></div><div class="chef"><img src="images/chef3.png" alt=""></div>
+  </div>
+</section>
+
+<section class="interior" aria-label="Interior"></section>
+
+<section class="booking" id="book">
+  <h2 class="title" data-i18n="book_t">Заказ <span>столика</span></h2>
+  <form id="bookForm">
+    <input type="text" required data-i18n-ph="ph_name" placeholder="Ваше имя">
+    <input type="tel" required data-i18n-ph="ph_phone" placeholder="Телефон">
+    <input type="date" required>
+    <button class="btn" type="submit" data-i18n="send">ОТПРАВИТЬ</button>
+  </form>
+  <p id="formMsg" class="form-msg"></p>
+</section>
+
+<footer>
+  <p>📞 +999-888-76-54 · <span data-i18n="addr">Санкт-Петербург, ул. Примерная, 1</span></p>
+  <p>© 2026 <span data-i18n="hero2">Наш ресторан</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
